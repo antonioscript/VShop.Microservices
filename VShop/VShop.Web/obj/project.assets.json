@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projects\\Análises\\Novo\\VShop.Microservices\\VShop\\VShop.Web\\VShop.Web.csproj",
+      "projectUniqueName": "C:\\Projects\\Micro\\VShop.Microservices\\VShop\\VShop.Web\\VShop.Web.csproj",
       "projectName": "VShop.Web",
-      "projectPath": "C:\\Projects\\Análises\\Novo\\VShop.Microservices\\VShop\\VShop.Web\\VShop.Web.csproj",
+      "projectPath": "C:\\Projects\\Micro\\VShop.Microservices\\VShop\\VShop.Web\\VShop.Web.csproj",
       "packagesPath": "C:\\Users\\Antônio Rocha\\.nuget\\packages\\",
-      "outputPath": "C:\\Projects\\Análises\\Novo\\VShop.Microservices\\VShop\\VShop.Web\\obj\\",
+      "outputPath": "C:\\Projects\\Micro\\VShop.Microservices\\VShop\\VShop.Web\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

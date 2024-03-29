@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Projects\\Análises\\Novo\\VShop.Microservices\\VShop\\VShop.ProductApi\\VShop.ProductApi.csproj": {}
+    "C:\\Projects\\Micro\\VShop.Microservices\\VShop\\VShop.ProductApi\\VShop.ProductApi.csproj": {}
   },
   "projects": {
-    "C:\\Projects\\Análises\\Novo\\VShop.Microservices\\VShop\\VShop.ProductApi\\VShop.ProductApi.csproj": {
+    "C:\\Projects\\Micro\\VShop.Microservices\\VShop\\VShop.ProductApi\\VShop.ProductApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projects\\Análises\\Novo\\VShop.Microservices\\VShop\\VShop.ProductApi\\VShop.ProductApi.csproj",
+        "projectUniqueName": "C:\\Projects\\Micro\\VShop.Microservices\\VShop\\VShop.ProductApi\\VShop.ProductApi.csproj",
         "projectName": "VShop.ProductApi",
-        "projectPath": "C:\\Projects\\Análises\\Novo\\VShop.Microservices\\VShop\\VShop.ProductApi\\VShop.ProductApi.csproj",
+        "projectPath": "C:\\Projects\\Micro\\VShop.Microservices\\VShop\\VShop.ProductApi\\VShop.ProductApi.csproj",
         "packagesPath": "C:\\Users\\Antônio Rocha\\.nuget\\packages\\",
-        "outputPath": "C:\\Projects\\Análises\\Novo\\VShop.Microservices\\VShop\\VShop.ProductApi\\obj\\",
+        "outputPath": "C:\\Projects\\Micro\\VShop.Microservices\\VShop\\VShop.ProductApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
