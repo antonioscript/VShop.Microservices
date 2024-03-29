@@ -11,6 +11,7 @@ namespace VShop.ProductApi.DTOs
         public string? Description { get; set; }
         public long Stock { get; set; }
         public string? ImageURL { get; set; }
+        public string? CategoryName { get; set; }
 
         [JsonIgnore]
         public CategoryDto? Category { get; set; }
