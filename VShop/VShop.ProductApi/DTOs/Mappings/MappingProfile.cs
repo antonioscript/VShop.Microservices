@@ -1,18 +1,17 @@
 ﻿using AutoMapper;
 using VShop.ProductApi.Models;
 
-namespace VShop.ProductApi.DTOs.Mappings
+namespace VShop.ProductApi.DTOs.Mappings;
+
+public class MappingProfile : Profile
 {
-    public class MappingProfile : Profile
+    public MappingProfile()
     {
-        public MappingProfile()
-        {
-            CreateMap<Category, CategoryDto>().ReverseMap();
+        CreateMap<Category, CategoryDTO>().ReverseMap();
 
-            CreateMap<Product, ProductDto>();
+        CreateMap<ProductDTO, Product>();
 
-            CreateMap<Product, ProductDto>()
-                .ForMember(x => x.CategoryName, opt => opt.MapFrom(src => src.Category.Name));
-        }
+        CreateMap<Product, ProductDTO>()
+            .ForMember(x => x.CategoryName, opt => opt.MapFrom(src => src.Category.Name));  
     }
 }

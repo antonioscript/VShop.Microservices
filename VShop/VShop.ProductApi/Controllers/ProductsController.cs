@@ -14,7 +14,7 @@ namespace VShop.ProductApi.Controllers
             _productService = productService;
         }
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<ProductDto>>> Get()
+        public async Task<ActionResult<IEnumerable<ProductDTO>>> Get()
         {
             var produtosDto = await _productService.GetProducts();
             if (produtosDto == null)
@@ -25,7 +25,7 @@ namespace VShop.ProductApi.Controllers
         }
 
         [HttpGet("{id}", Name = "GetProduct")]
-        public async Task<ActionResult<ProductDto>> Get(int id)
+        public async Task<ActionResult<ProductDTO>> Get(int id)
         {
             var produtoDto = await _productService.GetProductById(id);
             if (produtoDto == null)
@@ -36,7 +36,7 @@ namespace VShop.ProductApi.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult> Post([FromBody] ProductDto produtoDto)
+        public async Task<ActionResult> Post([FromBody] ProductDTO produtoDto)
         {
             if (produtoDto == null)
                 return BadRequest("Data Invalid");
@@ -48,7 +48,7 @@ namespace VShop.ProductApi.Controllers
         }
 
         [HttpPut()]
-        public async Task<ActionResult> Put([FromBody] ProductDto produtoDto)
+        public async Task<ActionResult> Put([FromBody] ProductDTO produtoDto)
         {
             if (produtoDto == null)
                 return BadRequest("Data invalid");
@@ -59,7 +59,7 @@ namespace VShop.ProductApi.Controllers
         }
 
         [HttpDelete("{id}")]
-        public async Task<ActionResult<ProductDto>> Delete(int id)
+        public async Task<ActionResult<ProductDTO>> Delete(int id)
         {
             var produtoDto = await _productService.GetProductById(id);
 

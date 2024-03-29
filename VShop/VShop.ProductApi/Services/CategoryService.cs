@@ -15,28 +15,28 @@ namespace VShop.ProductApi.Services
             _mapper = mapper;
         }
 
-        public async Task<IEnumerable<CategoryDto>> GetCategories()
+        public async Task<IEnumerable<CategoryDTO>> GetCategories()
         {
-            var categoriesEntity = await _categoryRepository.GetAll();
-            return _mapper.Map<IEnumerable<CategoryDto>>(categoriesEntity);
+           var categoriesEntity = await _categoryRepository.GetAll();
+            return _mapper.Map<IEnumerable<CategoryDTO>>(categoriesEntity);
         }
-        public async Task<IEnumerable<CategoryDto>> GetCategoriesProducts()
+        public async Task<IEnumerable<CategoryDTO>> GetCategoriesProducts()
         {
             var categoriesEntity = await _categoryRepository.GetCategoriesProducts();
-            return _mapper.Map<IEnumerable<CategoryDto>>(categoriesEntity);
+            return _mapper.Map<IEnumerable<CategoryDTO>>(categoriesEntity);
         }
-        public async Task<CategoryDto> GetCategoryById(int id)
+        public async Task<CategoryDTO> GetCategoryById(int id)
         {
             var categoryEntity = await _categoryRepository.GetById(id);
-            return _mapper.Map<CategoryDto>(categoryEntity);
+            return _mapper.Map<CategoryDTO>(categoryEntity);
         }
-        public async Task AddCategory(CategoryDto categoryDto)
+        public async Task AddCategory(CategoryDTO categoryDto)
         {
             var categoryEntity = _mapper.Map<Category>(categoryDto);
             await _categoryRepository.Create(categoryEntity);
             categoryDto.CategoryId = categoryEntity.CategoryId;
         }
-        public async Task UpdateCategory(CategoryDto categoryDto)
+        public async Task UpdateCategory(CategoryDTO categoryDto)
         {
             var categoryEntity = _mapper.Map<Category>(categoryDto);
             await _categoryRepository.Update(categoryEntity);
@@ -45,6 +45,6 @@ namespace VShop.ProductApi.Services
         {
             var categoryEntity = _categoryRepository.GetById(id).Result;
             await _categoryRepository.Delete(categoryEntity.CategoryId);
-        }
+        }      
     }
 }

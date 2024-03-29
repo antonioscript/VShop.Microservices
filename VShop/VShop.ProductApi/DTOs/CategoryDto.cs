@@ -1,12 +1,15 @@
-﻿using VShop.ProductApi.Models;
+﻿using System.ComponentModel.DataAnnotations;
+using VShop.ProductApi.Models;
 
-namespace VShop.ProductApi.DTOs
+namespace VShop.ProductApi.DTOs;
+
+public class CategoryDTO
 {
-    public class CategoryDto
-    {
-        public int CategoryId { get; set; }
-        public string? Name { get; set; }
+    public int CategoryId { get; set; }
 
-        public ICollection<ProductDto>? Products { get; set; }
-    }
+    [Required(ErrorMessage = "The Name is Required")]
+    [MinLength(3)]
+    [MaxLength(100)]
+    public string? Name { get; set; }
+    public ICollection<Product>? Products { get; set; }
 }

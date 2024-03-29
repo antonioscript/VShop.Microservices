@@ -1,12 +1,11 @@
 ﻿using VShop.ProductApi.DTOs;
-
 namespace VShop.ProductApi.Services;
 public interface ICategoryService
 {
-    Task<IEnumerable<CategoryDto>> GetCategories();
-    Task<IEnumerable<CategoryDto>> GetCategoriesProducts();
-    Task<CategoryDto> GetCategoryById(int id);
-    Task AddCategory(CategoryDto categoryDto);
-    Task UpdateCategory(CategoryDto categoryDto);
+    Task<IEnumerable<CategoryDTO>> GetCategories();
+    Task<IEnumerable<CategoryDTO>> GetCategoriesProducts();
+    Task<CategoryDTO> GetCategoryById(int id);
+    Task AddCategory(CategoryDTO categoryDto);
+    Task UpdateCategory(CategoryDTO categoryDto);
     Task RemoveCategory(int id);
 }

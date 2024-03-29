@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jKUCCIHnue9B+LRIz3o0Klc/NTemwrbHCOcY0CqEDtZnCSex7B73muR9lHCuPNa9kmZLLJT+47TyicuEnu0ANQ==",
+  "dgSpecHash": "uxVSkanUxq2PmaEER0ujCfDGbXLF+eYrfjhvVr75i//C8YImQfe1BGDUP6n8Qkjq7rPsG1a9C/PavFhapczxIQ==",
   "success": true,
-  "projectFilePath": "C:\\Projects\\Microservices\\VShop.Microservices\\VShop\\VShop.Web\\VShop.Web.csproj",
+  "projectFilePath": "C:\\Projects\\Análises\\Novo\\VShop.Microservices\\VShop\\VShop.Web\\VShop.Web.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
