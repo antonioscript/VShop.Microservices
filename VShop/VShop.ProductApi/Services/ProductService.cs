@@ -21,6 +21,7 @@ public class ProductService : IProductService
         var productsEntity = await _productRepository.GetAll();
         return _mapper.Map<IEnumerable<ProductDTO>>(productsEntity);
     }
+
     public async Task<ProductDTO> GetProductById(int id)
     {
         var productEntity = await _productRepository.GetById(id);
@@ -32,11 +33,13 @@ public class ProductService : IProductService
         await _productRepository.Create(productEntity);
         productDto.Id = productEntity.Id;
     }
+
     public async Task UpdateProduct(ProductDTO productDto)
     {
         var categoryEntity = _mapper.Map<Product>(productDto);
         await _productRepository.Update(categoryEntity);
     }
+
     public async Task RemoveProduct(int id)
     {
         var productEntity = await _productRepository.GetById(id);

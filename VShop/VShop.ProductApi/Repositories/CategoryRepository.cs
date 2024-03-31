@@ -16,31 +16,36 @@ public class CategoryRepository : ICategoryRepository
     {
         return await _context.Categories.ToListAsync();
     }
+
     public async Task<IEnumerable<Category>> GetCategoriesProducts()
     {
-        return await _context.Categories.Include(c=> c.Products).ToListAsync();
+        return await _context.Categories.Include(x => x.Products).ToListAsync();
     }
+
     public async Task<Category> GetById(int id)
     {
-        return await _context.Categories.Where(c => c.CategoryId == id).FirstOrDefaultAsync();
+        return await _context.Categories.Where(p => p.CategoryId == id).FirstOrDefaultAsync();
     }
+
     public async Task<Category> Create(Category category)
     {
         _context.Categories.Add(category);
         await _context.SaveChangesAsync();
         return category;
     }
+
     public async Task<Category> Update(Category category)
     {
         _context.Entry(category).State = EntityState.Modified;
         await _context.SaveChangesAsync();
         return category;
     }
+
     public async Task<Category> Delete(int id)
     {
-        var category = await GetById(id);
-        _context.Categories.Remove(category);
+        var product = await GetById(id);
+        _context.Categories.Remove(product);
         await _context.SaveChangesAsync();
-        return category;
+        return product;
     }
 }

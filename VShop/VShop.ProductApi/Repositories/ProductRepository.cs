@@ -7,7 +7,6 @@ namespace VShop.ProductApi.Repositories;
 public class ProductRepository : IProductRepository
 {
     private readonly AppDbContext _context;
-
     public ProductRepository(AppDbContext context)
     {
         _context = context;
@@ -15,13 +14,13 @@ public class ProductRepository : IProductRepository
 
     public async Task<IEnumerable<Product>> GetAll()
     {
-        return await _context.Products.Include(c=> c.Category).ToListAsync();
+        var products = await _context.Products.Include(c=> c.Category).ToListAsync();
+        return products;
     }
 
     public async Task<Product> GetById(int id)
     {
-        return await _context.Products.Include(c => c.Category).Where(p => p.Id == id)
-            .FirstOrDefaultAsync();
+        return await _context.Products.Include(c=> c.Category).Where(p=> p.Id == id).FirstOrDefaultAsync();
     }
 
     public async Task<Product> Create(Product product)

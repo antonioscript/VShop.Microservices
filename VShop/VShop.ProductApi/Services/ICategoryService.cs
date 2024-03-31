@@ -1,5 +1,7 @@
 ﻿using VShop.ProductApi.DTOs;
+
 namespace VShop.ProductApi.Services;
+
 public interface ICategoryService
 {
     Task<IEnumerable<CategoryDTO>> GetCategories();

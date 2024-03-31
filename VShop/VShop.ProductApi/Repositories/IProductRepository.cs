@@ -1,7 +1,6 @@
 ﻿using VShop.ProductApi.Models;
 
 namespace VShop.ProductApi.Repositories;
-
 public interface IProductRepository
 {
     Task<IEnumerable<Product>> GetAll();
