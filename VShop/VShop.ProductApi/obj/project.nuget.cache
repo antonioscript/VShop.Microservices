@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fNEHbSnx63W7GfH7iUrozll5G67qdYjooLoH95snLINtMsgeR/sXvKC9kLdn8QN/DeIadCouWIpHNrkw4zw5pA==",
+  "dgSpecHash": "p+mn+pOXsqb9rxWeESaQXWNYLbYNxsad+ghkX8aVZ30gKdGwR8X03jziAbPBhynAnZVxadmyw3U9aVP0UU+oww==",
   "success": true,
-  "projectFilePath": "C:\\Projects\\MySQL\\vshop1\\VShop.ProductApi\\VShop.ProductApi.csproj",
+  "projectFilePath": "C:\\Projects\\Microservices\\VShop.Microservices\\VShop\\VShop.ProductApi\\VShop.ProductApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Antônio Rocha\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
     "C:\\Users\\Antônio Rocha\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",

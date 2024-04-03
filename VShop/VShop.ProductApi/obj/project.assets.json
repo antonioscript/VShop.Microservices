@@ -1469,11 +1469,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projects\\MySQL\\vshop1\\VShop.ProductApi\\VShop.ProductApi.csproj",
+      "projectUniqueName": "C:\\Projects\\Microservices\\VShop.Microservices\\VShop\\VShop.ProductApi\\VShop.ProductApi.csproj",
       "projectName": "VShop.ProductApi",
-      "projectPath": "C:\\Projects\\MySQL\\vshop1\\VShop.ProductApi\\VShop.ProductApi.csproj",
+      "projectPath": "C:\\Projects\\Microservices\\VShop.Microservices\\VShop\\VShop.ProductApi\\VShop.ProductApi.csproj",
       "packagesPath": "C:\\Users\\Antônio Rocha\\.nuget\\packages\\",
-      "outputPath": "C:\\Projects\\MySQL\\vshop1\\VShop.ProductApi\\obj\\",
+      "outputPath": "C:\\Projects\\Microservices\\VShop.Microservices\\VShop\\VShop.ProductApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

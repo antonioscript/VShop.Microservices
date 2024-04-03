@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4XEclr8uIoGhmRbl2nIa6Zq3aMS2H1bQL4eN5BMe0wq7OX9fCLq8EUeSP6ZZg81QxvqnTp38r26BH2SW/jQo/A==",
+  "dgSpecHash": "ifnqp3h//jWpjY7iorO8lmgJMKnlfhP66Z6nWQ5YTainJfHHxd9XnMiz57Pk9Yq+ys/BgLzIgAH2wkuBofCnug==",
   "success": true,
-  "projectFilePath": "C:\\Projects\\MySQL\\vshop1\\VShop.Web\\VShop.Web.csproj",
+  "projectFilePath": "C:\\Projects\\Microservices\\VShop.Microservices\\VShop\\VShop.Web\\VShop.Web.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Antônio Rocha\\.nuget\\packages\\humanizer.core\\2.2.0\\humanizer.core.2.2.0.nupkg.sha512",
     "C:\\Users\\Antônio Rocha\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",
